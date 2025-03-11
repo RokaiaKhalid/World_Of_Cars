@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <!-- normalize  -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+  <!-- font awesome style -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="css/all.min.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&#038;display=swap" rel="stylesheet" />
+
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700|Roboto:400,700&display=swap" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+  <title>World Of Cars | Pay</title>
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container">
+        <div class="top_contact-container">
+          <form class="form-inline search-bar">
+            <input type="search" placeholder="Search">
+            <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
+          </form>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <nav class="custom_nav-container pt-3">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              World Of Cars 
+            </span>
+          </a>
+          <div class="collapse " id="navbarSupportedContent">
+            <div class="d-flex  flex-column flex-lg-row align-items-center w-100 justify-content-between">
+                
+                <ul class="login-btn-container ml-0 ml-lg-5">
+                  <li class="shopping-card">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="badge"></span>
+                    <div class="cart-products">
+                      <div class="content"></div>
+                      <button onclick="checkLogedUserC()">view all products</button>
+                    </div>
+                  </li>
+                <li class="favorite">
+                    <i class="fa-solid fa-star"></i>
+                    <span class="badge"></span>
+                    <div class="favorite-products">
+                      <div class="content"></div>
+                      <button onclick="checkLogedUserF()">view all products</button>
+                    </div>
+                  </li>
+                    <li class="account">
+                    <div class="into">
+                      <img src="images/user.png" alt="">
+                      <div></div>
+                    </div>
+                    <div class="list">
+                      <ul id="links_log">
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="register.html">Register</a></li>
+                      </ul>
+                      <ul  id="user_info" class="user-info">
+                        <li>
+                          <i class="fa-solid fa-circle-user"></i>
+                          <div>
+                            <a href="#"  id="user"></a>
+                            <span id="email"></span>
+                            <span id="account-type"></span>
+                            <a href="#" class="modify">Modified Account</a>
+                          </div>
+                        </li>
+                        <li><a href="#"  id="log_out">Log out</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+  <div class="pay">
+    <div class="container">
+      <div class="box">
+        <form action="">
+          <div class="payed code" onclick="cardCode()">
+            <label>Card number</label>
+            <input type="tel" name="code">
+          </div>
+          <div class="payed name" onclick="cardName()">
+            <label>Cardholder Name</label>
+            <input type="text" name="name">
+          </div>
+          <div class="payed date" onclick="cardDate()">
+            <label>MM/YY</label>
+            <input type="date" name="">
+          </div>
+          <div class="payed password" onclick="cardPassword()">
+            <label>CVV</label>
+            <input type="password" name="date-end">
+          </div>
+          <div>
+            <input type="checkbox" name="save" id="save">
+            <label for="save">Save Details Card</label>
+          </div>
+          <a href="buy.html" onclick="addNew()">Done</a>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="js/user.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/pay.js"></script>
+  <!-- <script src="js/main.js"></script> -->
+  </body>
+  </html>

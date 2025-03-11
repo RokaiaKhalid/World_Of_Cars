@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <!-- normalize  -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+  <!-- font awesome style -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="css/all.min.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&#038;display=swap" rel="stylesheet" />
+
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700|Roboto:400,700&display=swap" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+  <title>World Of Cars</title>
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container">
+        <div class="top_contact-container">
+          <form class="form-inline search-bar">
+            <input type="search" placeholder="Search">
+            <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
+          </form>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <nav class="custom_nav-container pt-3">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              World Of Cars 
+            </span>
+          </a>
+          
+          <div class="collapse " id="navbarSupportedContent">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                  <a class="nav-link home" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Sale"> Sale </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Products"> Products </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#popular prands"> popular prands </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="news.html"> News </a>
+                </li>
+              </ul>
+              <ul class="login-btn-container ml-0 ml-lg-5">
+                <li class="shopping-card">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <span class="badge"></span>
+                  <div class="cart-products">
+                    <div class="content"></div>
+                    <button onclick="checkLogedUserC()">view all products</button>
+                  </div>
+                </li>
+                <li class="favorite">
+                  <i class="fa-solid fa-star"></i>
+                  <span class="badge"></span>
+                  <div class="favorite-products">
+                    <div class="content"></div>
+                    <button onclick="checkLogedUserF()">view all products</button>
+                  </div>
+                </li>
+                <li class="account">
+                  <div class="into">
+                    <img src="images/user.png" alt="">
+                    <div></div>
+                  </div>
+                  <div class="list">
+                    <ul id="links_log">
+                      <li><a href="login.html">Login</a></li>
+                      <li><a href="register.html">Register</a></li>
+                    </ul>
+                    <ul  id="user_info" class="user-info">
+                      <li>
+                        <i class="fa-solid fa-circle-user"></i>
+                        <div>
+                          <a href="#"  id="user"></a>
+                          <span id="email"></span>
+                          <span id="account-type"></span>
+                          <a href="#" class="modify">Modified Account</a>
+                        </div>
+                      </li>
+                      <li><a href="#"  id="log_out">Log out</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="toggle-menu"><i class="fa fa-bars fa-inverse"></i></li>
+              </ul>
+            </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+
+
+   <!-- Start Landing -->
+  <div class="landing">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="text">
+        <div class="content">
+          <h2>
+            Hello World!<br />
+            welcome to my store.
+          </h2>
+          <p>
+            We have most types of internal and external car parts,
+            including furniture, brakes, shock absorbers, motor parts,
+            even doors, fenders, glass, headlights, etc.
+            We work in Japanese, Korean, German, French, and other cars.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Landing -->
+
+ <!-- Start Gallery -->
+ <div class="gallery" id="Products">
+  <h2 class="main-title">Products</h2>
+  <div class="container">
+    <div class="box">
+      <div class="image">
+       <a href="car1.html"><img decoding="async" src="images/corolla.jpg" alt="" /></a> 
+      </div>
+    </div>
+    <div class="box">
+      <div class="image">
+       <a href="car1.html"><img decoding="async" src="images/bmw2.jpg" alt="" /></a> 
+      </div>
+    </div>
+    <div class="box">
+      <div class="image">
+        <a href="car1.html"><img decoding="async" src="images/hyundai111.jpg" alt="" /></a>
+      </div>
+    </div>
+    <div class="box">
+      <div class="image">
+       <a href="car1.html"><img decoding="async" src="images/lancer11.jpg" alt="" /></a> 
+      </div>
+    </div>
+    <div class="box">
+      <div class="image">
+       <a href="car1.html"><img decoding="async" src="images/mer6.jpg" alt="" /></a> 
+      </div>
+    </div>
+    <div class="box">
+      <div class="image">
+       <a href="car1.html"> <img decoding="async" src="images/kia45.jpg" alt="" /></a> 
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Gallery -->
+<!-- Start Team -->
+<div class="team" id="popular prands">
+  <h2 class="main-title">POPULAR BRANDS</h2>
+  <div class="container">
+    <div class="box">
+      <div class="data">
+        <img decoding="async" src="images/images (1).png" alt="" />
+      </div>
+   
+    </div>
+    <div class="box">
+      <div class="data">
+        <img decoding="async" src="images/BMW.png" alt="" />
+      </div>
+      
+    </div>
+    <div class="box">
+      <div class="data">
+        <img decoding="async" src=" images/hy.png" alt="" />
+      </div>
+     
+    </div>
+    <div class="box">
+      <div class="data">
+        <img decoding="async" src=" images/mit2.png" alt="" />
+      </div>
+    
+    </div>
+    <div class="box">
+      <div class="data">
+        <img decoding="async" src=" images/mc.png" alt="" />
+      </div>
+   
+    </div>
+    <div class="box">
+      <div class="data">
+        <img decoding="async" src=" images/k.png" alt="" />
+      </div>
+    </div>
+     
+    </div>
+
+
+  </div>
+</div>
+<div class="spikes"></div>
+<!-- End Team -->
+    <!-- Start Discount -->
+    <div class="discount" id="log-in">
+      <div class="image">
+        <div class="content">
+          <h2>Special Order</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi asperiores consectetur, recusandae
+            ratione provident necessitatibus, cumque delectus commodi fuga praesentium beatae. Totam vel similique
+            laborum dicta aperiam odit doloribus corporis.
+          </p>
+          <img decoding="async" src=" images/background.jpg" alt="" />
+        </div>
+      </div>
+      <div class="form">
+        <div class="content">
+          <h2>Request A Order</h2>
+          <form action="">
+            <input class="input" type="text" placeholder="Your Name" name="name" />
+            <input class="input" type="email" placeholder="Your Email" name="email" />
+            <input class="input" type="text" placeholder="Your Phone" name="mobile" />
+            <textarea class="input" placeholder="Tell Us About Your Needs" name="message"></textarea>
+            <input type="submit" value="Send" />
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- End Discount -->
+        <!-- Start Footer -->
+<div class="footer">
+  <div class="container">
+    <div class="box">
+      <h3>World Of Cars </h3>
+      <ul class="social">
+        <li><a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#" class="youtube"><i class="fab fa-youtube"></i></a></li>
+      </ul>
+      <p class="text">
+        We have most types of internal and external car parts,
+        including furniture, brakes, shock absorbers, 
+      </p>
+    </div>
+    <div class="box">
+      <ul class="links">
+        <li><a href="#">Important Link 1</a></li>
+        <li><a href="#">Important Link 2</a></li>
+        <li><a href="#">Important Link 3</a></li>
+        <li><a href="#">Important Link 4</a></li>
+        <li><a href="#">Important Link 5</a></li>
+      </ul>
+    </div>
+    <div class="box">
+      <div class="line">
+        <i class="fas fa-map-marker-alt fa-fw"></i>
+        <div class="info">Egypt, Giza, Inside The Sphinx, Room Number 220</div>
+      </div>
+      <div class="line">
+        <i class="far fa-clock fa-fw"></i>
+        <div class="info">Business Hours: From 10:00 To 18:00</div>
+      </div>
+      <div class="line">
+        <i class="fas fa-phone-volume fa-fw"></i>
+        <div class="info">
+          <span>+20123456789</span>
+          <span>+20198765432</span>
+        </div>
+      </div>
+    </div>
+    <div class="box footer-gallery">
+      <img decoding="async" src=" images/1.jpg" alt="" />
+      <img decoding="async" src=" images/2.jpg" alt="" />
+      <img decoding="async" src=" images/4.jpeg" alt="" />
+      <img decoding="async" src=" images/7.jpg" alt="" />
+      <img decoding="async" src=" images/5.jpg" alt="" />
+      <img decoding="async" src=" images/9.jpg" alt="" />
+    </div>
+  </div>
+  <p class="copyright">Made With &lt;3 By Team 68</p>
+</div>
+<!-- End Footer -->
+<!-- JS -->
+<!-- <script src="js/main.js"></script> -->
+  <script src="js/data.js"></script>
+  <script src="js/user.js"></script>
+  <script src="js/main.js"></script>
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js">
+  </script>
+  <script type="text/javascript">
+   
+   $ (".owl-carousel").owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      navText: [],
+      autoplay: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 2
+        },
+        1000: {
+          items: 4
+        }
+      }
+    });
+  </script>
+  <script type="text/javascript">
+    $(".owl-2").owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      navText: [],
+      autoplay: true,
+
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 2
+        },
+        1000: {
+          items: 4
+        }
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- slider stylesheet -->
+    <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+    <!-- font awesome style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&#038;display=swap" rel="stylesheet" />
+
+
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+    <!-- fonts style -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700|Roboto:400,700&display=swap" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="CSS/register.css">
+
+    <!-- responsive style -->
+    <!-- <link href="css/responsive.css" rel="stylesheet" /> -->
+    <title>World Of Cars | Register</title>
+  </head>
+<body>
+  <!-- sTart Header -->
+  <header class="header_section">
+    <div class="container-fluid">
+      <nav class="custom_nav-container pt-3">
+        <a class="navbar-brand" href="index.html">
+          <span>
+            World Of Cars 
+          </span>
+        </a>
+        
+      </nav>
+    </div>
+  </header>
+  <!-- End Header -->
+  <!-- Start section -->
+  <section class="section-form">
+    <div class="container">
+      <h2>Register User</h2>
+      <form action="" novalidate>
+        <div class="info">
+          <label for="">First Name</label>
+          <input id="fname" type="text" placeholder="Enter Your First Name" name="fname" required>
+          <i class="fa-solid fa-asterisk"></i>
+        </div>
+        <div class="info">
+          <label for="">Last Name</label>
+          <input id="lname" type="text" placeholder="Enter Your Last Name" name="lname" required>
+          <i class="fa-solid fa-asterisk"></i>
+        </div>
+        <div class="info">
+          <label for="">Email</label>
+          <input id="email" type="email" placeholder="Enter Your Email" name="email" required>
+          <i class="fa-solid fa-asterisk"></i>
+        </div>
+        <div class="info">
+          <label for="">Password</label>
+          <input id="password" type="password" placeholder="Enter Your Password" name="password" required>
+          <i class="fa-solid fa-asterisk"></i>
+        </div>
+        <div class="info">
+          <label for="">Confirm Password</label>
+          <input id="con_password" type="password" placeholder="Enter Your Password" name="confirm-password" required>
+          <i class="fa-solid fa-asterisk"></i>
+        </div>
+        <div class="info">
+          <label for="">Mobile Number</label>
+          <input id="number" type="tel" placeholder="Enter Your Number" name="num">
+        </div>
+        <h4>Account Type</h4>
+  
+        <div class="check">
+          <input id="customer" type="radio" name="account-type" value="Customer">
+          <label for="customer">Customer</label>
+          <input id="trader" type="radio" name="account-type" value="Trader">
+          <label for="trader">Trader</label>
+          <input id="centre" type="radio" name="account-type" value="Centre">
+          <label for="centre">Service Centre</label>
+          <input id="company" type="radio" name="account-type" value="Company">
+          <label for="company">Company</label>
+        </div>
+        <div class="accept">
+          <input type="checkbox" name="accept" id="check">
+          <label for="check">
+            Creating an account means you agree with our 
+            <a href="#">Terms and Services</a>, <a href="#">Privacy Policy</a> and  
+            <a>Refund Policy</a>.
+          </label>
+        </div>
+        <input id="sign_up" type="submit" name="send" value="sign up" class="button">
+        <p>You Have account <a href="login.html">Login</a></p>
+      </form>
+    </div>
+  </section>
+  <!-- End Section -->
+  <script src="js/register.js"></script>
+</body>
+</html>
